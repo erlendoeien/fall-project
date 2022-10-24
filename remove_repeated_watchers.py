@@ -13,19 +13,19 @@ def merge_video_ccid(user2video, video_id2ccid):
     sequences = user2video.explode("seq").reset_index()
     return sequences.assign(video_id=sequences["seq"].str["video_id"]).merge(video_id2ccid)
 
-def count_user_ccid_interactions(interactions_df, video_id="ccid"):
+def count_user_ccid_interactions(interactions_df, count_col, video_id="ccid"):
     """Must contain either the video_id or ccid to group by"""
     logging.info("Counting user-ccid interactions")
     return (interactions_df.groupby([video_id, "user_id"]).size()
                             .reset_index()
-                            .rename(columns={0: "num_watched"})
-                            .sort_values("num_watched", ascending=False))
+                            .rename(columns={0: count_col})
+                            .sort_values(count_col, ascending=False))
 
-def generate_blacklist_users(interaction_count_df, rep_thresh=20):
+def generate_blacklist_users(interaction_count_df, count_col, rep_thresh=20):
     """Generating a list of users who have watched any given ccid (not counting segments)
     more than `rep_thresh` times."""
     logging.info("Generating user blacklist")
-    return interaction_count_df[interaction_count_df["num_watched"] > rep_thresh]["user_id"].unique()
+    return interaction_count_df[interaction_count_df[count_col] > rep_thresh]["user_id"].unique()
 
 def filter_users(user2video, blacklist):
     logging.info("Filtering out blacklisted users")
@@ -52,7 +52,12 @@ if __name__ == "__main__":
 
     # Merging for blacklist generation with repetition threshold at 20
     user2video_ccid = merge_video_ccid(user2video_dd, video_id2ccid)
-    blacklist = generate_blacklist_users(user2video_ccid, 20)
+    # Counting views per user per ccid/video_id
+    view_count_col = "num_watched"
+    count_df = count_user_ccid_interactions(user2video_ccid, view_count_col)
+    blacklist = generate_blacklist_users(count_df, view_count_col, 20)
+    
+
     clean_user2video_ccid = filter_users(user2video_ccid, blacklist)
 
     num_segments = count_segments(user2video_dd)
