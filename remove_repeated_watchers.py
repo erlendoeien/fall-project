@@ -6,7 +6,7 @@ import logging
 
 def load_parquet_as_dd(file_name, **kwargs):
     logging.info(f"Loading parquet: {file_name}")
-    return dd.from_pandas(pd.read_parquet(file_name), npartitions=10, **kwargs)
+    return dd.read_parquet(file_name).repartition(npartitions=10)
 
 def merge_video_ccid(user2video, video_id2ccid):
     logging.info(f"Merging {user2video} with {video_id2ccid}")
@@ -29,13 +29,19 @@ def generate_blacklist_users(interaction_count_df, count_col, rep_thresh=20):
 
 def filter_users(user2video, blacklist):
     logging.info("Filtering out blacklisted users")
-    return user2video[~user2video["user_id"].isin(blacklist)]
+    return user2video[~user2video["user_id"].isin(blacklist.compute())]
 
 def count_segments(user2video):
-    return user2video["seq"].str["segment"].str.len().sum()
+    return user2video["seq"].str["segment"].str.len().sum().compute()
+
+def save_dd_df(df, filename):
+    return df.compute().to_parquet(filename)
+
 
 def setup_logging():
-    logging.basicConfig(filename="blacklist_cleaning.log", level=logging.DEBUG, filemode="w")
+    logging.basicConfig(filename="blacklist_cleaning.log",
+            format='%(asctime)s | %(levelname)s: %(message)s',
+            level=logging.DEBUG, filemode="w")
 
 
 if __name__ == "__main__":
@@ -45,10 +51,11 @@ if __name__ == "__main__":
     relations_path = base_path / "relations"
     user2video_simple_path, video_id2ccid_path = "user-video-simple.parquet.gzip", "video_id-ccid.txt"
     user2video_full = "user-video.json"
+
     #user2video_dd = load_parquet_as_dd(relations_path / user2video_path)
     video_id2ccid = dd.from_pandas(pd.read_csv(relations_path / "video_id-ccid.txt", sep="\t",
-        names=["video_id", "ccid"]), npartitions=10)
-    user2video_dd = dd.from_pandas(pd.read_json(relations_path / user2video_full, lines=True), npartitions=10)
+        names=["video_id", "ccid"]), npartitions=20)
+    user2video_dd = dd.read_json(relations_path / user2video_full).repartition(npartitions=20)
 
     # Merging for blacklist generation with repetition threshold at 20
     user2video_ccid = merge_video_ccid(user2video_dd, video_id2ccid)
@@ -60,11 +67,17 @@ if __name__ == "__main__":
 
     clean_user2video_ccid = filter_users(user2video_ccid, blacklist)
 
-    num_segments = count_segments(user2video_dd)
+    # Save files
+    logging.info("Saving blacklist")
+    blacklist.to_csv("results/blacklist")
+    logging.info("Saving cleaned user2-video-exploded")
+    save_dd_df(clean_user2video_ccid, relations_path / "clean-user-video-sequences.parquet")
+
+    num_segments = count_segments(user2video_ccid)
     clean_num_segments = count_segments(clean_user2video_ccid)
 
-    logging.info("Total number of segments before cleaning:", num_segments)
-    logging.info("Total number of segments after cleaning:", clean_num_segments)
-    logging.info(f"-----> Dataset reduction {(num_segments/clean_num_segments)*100:.2f}")
-    logging.info("Number of blacklisted users", blacklist.shape[0])
-    logging.info("Number of total unique users:", user2video_dd["user_id"].unique().shape[0])
+    logging.info(f"Total number of segments before cleaning: {num_segments}")
+    logging.info(f"Total number of segments after cleaning: {clean_num_segments}")
+    logging.info(f"\n-----> Dataset reduction {(1-(num_segments/clean_num_segments)*100):.2f}")
+    logging.info(f"Number of blacklisted users: {blacklist.shape[0].compute()}")
+    logging.info(f"Number of total unique users: {user2video_dd['user_id'].unique().shape[0].compute()}")
