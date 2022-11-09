@@ -1,12 +1,12 @@
 #!/bin/sh
 #SBATCH --partition=CPUQ
 #SBATCH --account=ie-idi
-#SBATCH --time=03:00:00
+#SBATCH --time=02:00:00
 #SBATCH --nodes=1              # 2 compute nodes
 #SBATCH --ntasks-per-node=1    # 1 mpi process each node
-#SBATCH --mem=64000            # 12GB - in megabytes
+#SBATCH --mem=16000            # 12GB - in megabytes
 #SBATCH --job-name="partition_sequences"
-#SBATCH --cpus-per-task=1 # Number of physical cores
+#SBATCH --cpus-per-task=15 # Number of physical cores
 #SBATCH --ntasks-per-core=2 # Hyperthreading -> 2 threads for each physical core
 #SBATCH --output=partition_sequences.out
 

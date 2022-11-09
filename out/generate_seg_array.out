@@ -1,0 +1,255 @@
+Th job ID is 13195672
+Number of nodes: 1
+Number of nodes: 1
+We are using 15 cores
+Number of nodes: 1
+Number of nodes: 1
+ the name of the job is: generate_seg_reps_array
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+ the name of the job is: generate_seg_reps_array
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+ the name of the job is: generate_seg_reps_array
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+We are using 15 cores
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+We are using 15 cores
+We are using 15 cores
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+Th job ID is 13195670
+ the name of the job is: generate_seg_reps_array
+The job was run on these nodes: idun-03-46
+We are using 15 cores
+We are using 15 cores
+Total of 1 cores
+We are using 15 cores
+Total of 1 cores
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+Th job ID is 13195668
+Total of 1 cores
+ the name of the job is: generate_seg_reps_array
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+ the name of the job is: generate_seg_reps_array
+Total of 1 cores
+ the name of the job is: generate_seg_reps_array
+Th job ID is 13195675
+ the name of the job is: generate_seg_reps_array
+ the name of the job is: generate_seg_reps_array
+Th job ID is 13195666
+Number of nodes: 1
+Th job ID is 13195678
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+Total of 1 cores
+ the name of the job is: generate_seg_reps_array
+The job was run on these nodes: idun-03-45
+Th job ID is 13195667
+Th job ID is 13195671
+Total of 1 cores
+Total of 1 cores
+Total of 1 cores
+ the name of the job is: generate_seg_reps_array
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+The job was run on these nodes: idun-03-45
+The job was run on these nodes: idun-03-44
+We are using 15 cores
+ the name of the job is: generate_seg_reps_array
+Th job ID is 13195685
+Th job ID is 13195682
+The job was run on these nodes: idun-03-47
+Th job ID is 13195687
+Th job ID is 13195669
+The job was run on these nodes: idun-03-44
+The job was run on these nodes: idun-03-46
+The job was run on these nodes: idun-03-33
+ the name of the job is: generate_seg_reps_array
+ the name of the job is: generate_seg_reps_array
+Th job ID is 13195674
+Th job ID is 13195654
+Number of nodes: 1
+Number of nodes: 1
+Total of 1 cores
+Th job ID is 13195677
+The job was run on these nodes: idun-03-35
+The job was run on these nodes: idun-03-34
+Number of nodes: 1
+ the name of the job is: generate_seg_reps_array
+Number of nodes: 1
+Number of nodes: 1
+Number of nodes: 1
+Number of nodes: 1
+Th job ID is 13195683
+Th job ID is 13195680
+The job was run on these nodes: idun-03-47
+The job was run on these nodes: idun-03-36
+The job was run on these nodes: idun-03-45
+We are using 15 cores
+We are using 15 cores
+The job was run on these nodes: idun-03-33
+Number of nodes: 1
+Number of nodes: 1
+We are using 15 cores
+The job was run on these nodes: idun-03-36
+We are using 15 cores
+We are using 15 cores
+Total of 1 cores
+We are using 15 cores
+The job was run on these nodes: idun-03-35
+The job was run on these nodes: idun-03-34
+Number of nodes: 1
+Th job ID is 13195686
+We are using 15 cores
+Total of 1 cores
+Number of nodes: 1
+We are using 15 cores
+We are using 15 cores
+Total of 1 cores
+Number of nodes: 1
+Number of nodes: 1
+Total of 1 cores
+Total of 1 cores
+Number of nodes: 1
+Number of nodes: 1
+We are using 15 cores
+Number of nodes: 1
+Total of 1 cores
+We are using 15 cores
+Total of 1 cores
+Total of 1 cores
+Total of 1 cores
+The job was run on these nodes: idun-03-36
+Total of 1 cores
+Total of 1 cores
+We are using 15 cores
+We are using 15 cores
+We are using 15 cores
+We are using 15 cores
+Total of 1 cores
+Total of 1 cores
+We are using 15 cores
+Total of 1 cores
+Number of nodes: 1
+Total of 1 cores
+Total of 1 cores
+We are using 15 cores
+Total of 1 cores
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        
+        ^
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        
+        ^
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal
+  File "/cluster/home/erlenoi/fall_project/fall-project/array_segment_repetition_count.py", line 87
+        
+        ^
+SyntaxError: EOF while scanning triple-quoted string literal

@@ -1,0 +1,1177 @@
+we are running from this directory: /cluster/home/erlenoi/fall_project/fall-project
+ the name of the job is: explode_count_array
+Th job ID is 13200554
+The job was run on these nodes: idun-03-47
+Number of nodes: 1
+We are using 15 cores
+Total of 1 cores
+Loading partition part.18.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+29044  U_15468789  V_1395633  ...                     1  390.0
+29045  U_15468789  V_1395633  ...                     1    NaN
+29051  U_15488328  V_1395633  ...                     1   65.0
+29052  U_15488328  V_1395633  ...                     1   40.0
+29053  U_15488328  V_1395633  ...                     1  145.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+29044  U_15468789  V_1395633  ...  390.0         NaN
+29045  U_15468789  V_1395633  ...    NaN         NaN
+29051  U_15488328  V_1395633  ...   65.0         NaN
+29052  U_15488328  V_1395633  ...   40.0         NaN
+29053  U_15488328  V_1395633  ...  145.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+29044  U_15468789  V_1395633  ...  390.0         0.0
+29045  U_15468789  V_1395633  ...    NaN         0.0
+29051  U_15488328  V_1395633  ...   65.0         0.0
+29052  U_15488328  V_1395633  ...   40.0         0.0
+29053  U_15488328  V_1395633  ...  145.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10031887  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+                                               ..
+U_9960753   3                     0.0           0
+U_9965589   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+Name: seg_rep_count, Length: 64959, dtype: int64
+Loading partition part.29.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id       gap
+28683  U_15316825  V_1395633  ...                     1  278617.0
+28282  U_15301062  V_1395633  ...                     1      50.0
+28283  U_15301062  V_1395633  ...                     1     200.0
+28284  U_15301062  V_1395633  ...                     1     265.0
+30116  U_15400716  V_1395633  ...                     1      10.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...       gap  session_id
+28683  U_15316825  V_1395633  ...  278617.0         NaN
+28282  U_15301062  V_1395633  ...      50.0         NaN
+28283  U_15301062  V_1395633  ...     200.0         NaN
+28284  U_15301062  V_1395633  ...     265.0         NaN
+30116  U_15400716  V_1395633  ...      10.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...       gap  session_id
+28683  U_15316825  V_1395633  ...  278617.0         0.0
+28282  U_15301062  V_1395633  ...      50.0         0.0
+28283  U_15301062  V_1395633  ...     200.0         0.0
+28284  U_15301062  V_1395633  ...     265.0         0.0
+30116  U_15400716  V_1395633  ...      10.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10021046  1                     0.0           0
+            2                     0.0           0
+U_100298    1                     0.0           0
+                                  1.0           0
+            2                     0.0           0
+                                               ..
+U_9999820   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+Name: seg_rep_count, Length: 64632, dtype: int64
+Loading partition part.23.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+94052   U_2447147  V_1358608  ...                     1    NaN
+94053   U_2447147  V_1358610  ...                     2    NaN
+94054   U_2447147  V_1358622  ...                     3    NaN
+94055   U_2447147  V_1358628  ...                     4    NaN
+34001  U_15487965  V_1395633  ...                     1  125.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+94052   U_2447147  V_1358608  ...    NaN         NaN
+94053   U_2447147  V_1358610  ...    NaN         NaN
+94054   U_2447147  V_1358622  ...    NaN         NaN
+94055   U_2447147  V_1358628  ...    NaN         NaN
+34001  U_15487965  V_1395633  ...  125.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+94052   U_2447147  V_1358608  ...    NaN         0.0
+94053   U_2447147  V_1358610  ...    NaN         0.0
+94054   U_2447147  V_1358622  ...    NaN         0.0
+94055   U_2447147  V_1358628  ...    NaN         0.0
+34001  U_15487965  V_1395633  ...  125.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10008027  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+                                               ..
+U_997246    42                    0.0           0
+                                  1.0           0
+U_9979396   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+Name: seg_rep_count, Length: 65173, dtype: int64
+Loading partition part.24.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+29351  U_15456581  V_1395633  ...                     1    NaN
+29018  U_15452401  V_1395633  ...                     1   50.0
+29019  U_15452401  V_1395633  ...                     1   77.0
+29020  U_15452401  V_1395633  ...                     1  110.0
+29021  U_15452401  V_1395633  ...                     1  211.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+29351  U_15456581  V_1395633  ...    NaN         NaN
+29018  U_15452401  V_1395633  ...   50.0         NaN
+29019  U_15452401  V_1395633  ...   77.0         NaN
+29020  U_15452401  V_1395633  ...  110.0         NaN
+29021  U_15452401  V_1395633  ...  211.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+29351  U_15456581  V_1395633  ...    NaN         0.0
+29018  U_15452401  V_1395633  ...   50.0         0.0
+29019  U_15452401  V_1395633  ...   77.0         0.0
+29020  U_15452401  V_1395633  ...  110.0         0.0
+29021  U_15452401  V_1395633  ...  211.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10026204  1                     0.0           0
+                                  1.0           0
+U_10033817  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+                                               ..
+U_9969147   10                    1.0           0
+            11                    0.0           0
+            12                    0.0           0
+            13                    0.0           0
+            14                    0.0           0
+Name: seg_rep_count, Length: 66097, dtype: int64
+Loading partition part.12.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+32389  U_15785279  V_1395633  ...                     1 -17.25
+32390  U_15785279  V_1395633  ...                     1  10.92
+32391  U_15785279  V_1395633  ...                     1    NaN
+32392  U_15785279  V_1395634  ...                     2  35.00
+32393  U_15785279  V_1395634  ...                     2  10.00
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+32389  U_15785279  V_1395633  ... -17.25         NaN
+32390  U_15785279  V_1395633  ...  10.92         NaN
+32391  U_15785279  V_1395633  ...    NaN         NaN
+32392  U_15785279  V_1395634  ...  35.00         NaN
+32393  U_15785279  V_1395634  ...  10.00         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+32389  U_15785279  V_1395633  ... -17.25         0.0
+32390  U_15785279  V_1395633  ...  10.92         0.0
+32391  U_15785279  V_1395633  ...    NaN         0.0
+32392  U_15785279  V_1395634  ...  35.00         0.0
+32393  U_15785279  V_1395634  ...  10.00         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_1002253   1                     0.0           0
+U_10024550  1                     0.0           0
+U_10091119  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+                                               ..
+U_9955515   17                    1.0           0
+            18                    0.0           0
+            19                    0.0           0
+U_99579     1                     0.0           0
+                                  1.0           0
+Name: seg_rep_count, Length: 65947, dtype: int64
+Loading partition part.28.parquet
+Exploding sequences to segments
+           user_id   video_id  ...  video_consecutive_id    gap
+126362  U_29504900  V_1395633  ...                     1    NaN
+29393   U_15488240  V_1395667  ...                     1    NaN
+29433   U_15488631  V_1395633  ...                     1   65.0
+29434   U_15488631  V_1395633  ...                     1  165.0
+29435   U_15488631  V_1395633  ...                     1  325.0
+
+[5 rows x 8 columns]
+inside session            user_id   video_id  ...    gap  session_id
+126362  U_29504900  V_1395633  ...    NaN         NaN
+29393   U_15488240  V_1395667  ...    NaN         NaN
+29433   U_15488631  V_1395633  ...   65.0         NaN
+29434   U_15488631  V_1395633  ...  165.0         NaN
+29435   U_15488631  V_1395633  ...  325.0         NaN
+
+[5 rows x 9 columns]
+           user_id   video_id  ...    gap  session_id
+126362  U_29504900  V_1395633  ...    NaN         0.0
+29393   U_15488240  V_1395667  ...    NaN         0.0
+29433   U_15488631  V_1395633  ...   65.0         0.0
+29434   U_15488631  V_1395633  ...  165.0         0.0
+29435   U_15488631  V_1395633  ...  325.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10060073  1                     0.0           1
+            2                     0.0           0
+U_10091132  1                     0.0           0
+U_10091148  1                     0.0           0
+            2                     0.0           0
+                                               ..
+U_9961062   5                     1.0           0
+U_9989964   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+Name: seg_rep_count, Length: 66330, dtype: int64
+Loading partition part.2.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id     gap
+78130  U_21347308  V_1358557  ...                     1  244.80
+78131  U_21347308  V_1358557  ...                     1     NaN
+78132  U_21347308  V_1358564  ...                     2     NaN
+78134  U_21347308  V_1358568  ...                     3     NaN
+78123  U_21347308  V_1358540  ...                     4  116.96
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...     gap  session_id
+78130  U_21347308  V_1358557  ...  244.80         NaN
+78131  U_21347308  V_1358557  ...     NaN         NaN
+78132  U_21347308  V_1358564  ...     NaN         NaN
+78134  U_21347308  V_1358568  ...     NaN         NaN
+78123  U_21347308  V_1358540  ...  116.96         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...     gap  session_id
+78130  U_21347308  V_1358557  ...  244.80         0.0
+78131  U_21347308  V_1358557  ...     NaN         0.0
+78132  U_21347308  V_1358564  ...     NaN         0.0
+78134  U_21347308  V_1358568  ...     NaN         0.0
+78123  U_21347308  V_1358540  ...  116.96         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10016535  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+U_10027865  1                     0.0           2
+                                               ..
+U_9946041   3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+            6                     0.0           0
+            7                     0.0           0
+Name: seg_rep_count, Length: 64238, dtype: int64
+Loading partition part.26.parquet
+Exploding sequences to segments
+           user_id   video_id  ...  video_consecutive_id    gap
+100351  U_24967357  V_1395671  ...                     1  610.0
+100352  U_24967357  V_1395671  ...                     1    NaN
+100357  U_24967357  V_1395672  ...                     2  240.0
+100358  U_24967357  V_1395672  ...                     2  224.0
+100359  U_24967357  V_1395672  ...                     2  736.0
+
+[5 rows x 8 columns]
+inside session            user_id   video_id  ...    gap  session_id
+100351  U_24967357  V_1395671  ...  610.0         NaN
+100352  U_24967357  V_1395671  ...    NaN         NaN
+100357  U_24967357  V_1395672  ...  240.0         NaN
+100358  U_24967357  V_1395672  ...  224.0         NaN
+100359  U_24967357  V_1395672  ...  736.0         NaN
+
+[5 rows x 9 columns]
+           user_id   video_id  ...    gap  session_id
+100351  U_24967357  V_1395671  ...  610.0         0.0
+100352  U_24967357  V_1395671  ...    NaN         0.0
+100357  U_24967357  V_1395672  ...  240.0         0.0
+100358  U_24967357  V_1395672  ...  224.0         0.0
+100359  U_24967357  V_1395672  ...  736.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10001181  1                     0.0           0
+U_10001587  1                     0.0           0
+            2                     0.0           4
+            3                     0.0           0
+                                  1.0           0
+                                               ..
+U_99772     48                    0.0           0
+            49                    0.0           0
+            50                    0.0           0
+            51                    0.0           0
+            52                    0.0           0
+Name: seg_rep_count, Length: 67280, dtype: int64
+Loading partition part.17.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id   gap
+44728  U_16344515  V_1395633  ...                     1  70.0
+44729  U_16344515  V_1395633  ...                     1  65.0
+44730  U_16344515  V_1395633  ...                     1  30.0
+44731  U_16344515  V_1395633  ...                     1   NaN
+44732  U_16344515  V_1395634  ...                     2  65.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  end_point  ...  video_consecutive_id   gap  session_id
+44728  U_16344515  V_1395633       36.8  ...                     1  70.0         NaN
+44729  U_16344515  V_1395633      301.8  ...                     1  65.0         NaN
+44730  U_16344515  V_1395633      651.8  ...                     1  30.0         NaN
+44731  U_16344515  V_1395633      744.4  ...                     1   NaN         NaN
+44732  U_16344515  V_1395634       25.0  ...                     2  65.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  end_point  ...  video_consecutive_id   gap  session_id
+44728  U_16344515  V_1395633       36.8  ...                     1  70.0         0.0
+44729  U_16344515  V_1395633      301.8  ...                     1  65.0         0.0
+44730  U_16344515  V_1395633      651.8  ...                     1  30.0         0.0
+44731  U_16344515  V_1395633      744.4  ...                     1   NaN         0.0
+44732  U_16344515  V_1395634       25.0  ...                     2  65.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10018910  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+                                               ..
+U_9968474   6                     0.0           0
+            7                     0.0           0
+            8                     0.0           0
+            9                     0.0           2
+            10                    0.0           0
+Name: seg_rep_count, Length: 66514, dtype: int64
+Loading partition part.25.parquet
+Exploding sequences to segments
+           user_id   video_id  ...  video_consecutive_id    gap
+126496  U_29272039  V_1395661  ...                     1  365.0
+126497  U_29272039  V_1395661  ...                     1    NaN
+88994   U_22891573  V_1358540  ...                     1    NaN
+88995   U_22891573  V_1358542  ...                     2    NaN
+88996   U_22891573  V_1358544  ...                     3    NaN
+
+[5 rows x 8 columns]
+inside session            user_id   video_id  ...    gap  session_id
+126496  U_29272039  V_1395661  ...  365.0         NaN
+126497  U_29272039  V_1395661  ...    NaN         NaN
+88994   U_22891573  V_1358540  ...    NaN         NaN
+88995   U_22891573  V_1358542  ...    NaN         NaN
+88996   U_22891573  V_1358544  ...    NaN         NaN
+
+[5 rows x 9 columns]
+           user_id   video_id  ...    gap  session_id
+126496  U_29272039  V_1395661  ...  365.0         0.0
+126497  U_29272039  V_1395661  ...    NaN         0.0
+88994   U_22891573  V_1358540  ...    NaN         0.0
+88995   U_22891573  V_1358542  ...    NaN         0.0
+88996   U_22891573  V_1358544  ...    NaN         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_1000342   1                     0.0           0
+            2                     0.0           0
+U_10027771  1                     0.0           2
+            2                     0.0           1
+U_10073123  1                     0.0           0
+                                               ..
+U_9970212   3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+            6                     0.0           0
+            7                     0.0           0
+Name: seg_rep_count, Length: 67507, dtype: int64
+Loading partition part.15.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+26243  U_15268021  V_1358551  ...                     1    NaN
+26288  U_15273142  V_1395633  ...                     1  215.0
+26289  U_15273142  V_1395633  ...                     1  135.0
+26290  U_15273142  V_1395633  ...                     1  190.0
+26291  U_15273142  V_1395633  ...                     1   35.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+26243  U_15268021  V_1358551  ...    NaN         NaN
+26288  U_15273142  V_1395633  ...  215.0         NaN
+26289  U_15273142  V_1395633  ...  135.0         NaN
+26290  U_15273142  V_1395633  ...  190.0         NaN
+26291  U_15273142  V_1395633  ...   35.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+26243  U_15268021  V_1358551  ...    NaN         0.0
+26288  U_15273142  V_1395633  ...  215.0         0.0
+26289  U_15273142  V_1395633  ...  135.0         0.0
+26290  U_15273142  V_1395633  ...  190.0         0.0
+26291  U_15273142  V_1395633  ...   35.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10017195  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+U_1003165   1                     0.0           0
+            2                     0.0           0
+                                               ..
+U_993635    1                     0.0           0
+            2                     0.0           0
+U_9950667   1                     0.0           0
+U_9969365   1                     0.0           0
+            2                     0.0           0
+Name: seg_rep_count, Length: 66837, dtype: int64
+Loading partition part.14.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+30820  U_15489108  V_1395633  ...                     1   25.0
+30821  U_15489108  V_1395633  ...                     1  135.0
+30822  U_15489108  V_1395633  ...                     1   55.0
+30823  U_15489108  V_1395633  ...                     1   10.0
+30824  U_15489108  V_1395633  ...                     1   75.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+30820  U_15489108  V_1395633  ...   25.0         NaN
+30821  U_15489108  V_1395633  ...  135.0         NaN
+30822  U_15489108  V_1395633  ...   55.0         NaN
+30823  U_15489108  V_1395633  ...   10.0         NaN
+30824  U_15489108  V_1395633  ...   75.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+30820  U_15489108  V_1395633  ...   25.0         0.0
+30821  U_15489108  V_1395633  ...  135.0         0.0
+30822  U_15489108  V_1395633  ...   55.0         0.0
+30823  U_15489108  V_1395633  ...   10.0         0.0
+30824  U_15489108  V_1395633  ...   75.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_1001999   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+U_10026106  1                     0.0           0
+            2                     0.0           0
+                                               ..
+U_9950292   14                    0.0           0
+            15                    0.0           0
+            16                    0.0           0
+U_9965579   1                     0.0           0
+            2                     0.0           0
+Name: seg_rep_count, Length: 66456, dtype: int64
+Loading partition part.9.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id        gap
+62246  U_18334070  V_1395633  ...                     1      315.0
+62247  U_18334070  V_1395633  ...                     1       55.0
+62248  U_18334070  V_1395633  ...                     1      125.0
+62249  U_18334070  V_1395633  ...                     1        NaN
+5835   U_11321207  V_1395633  ...                     1  7073421.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...        gap  session_id
+62246  U_18334070  V_1395633  ...      315.0         NaN
+62247  U_18334070  V_1395633  ...       55.0         NaN
+62248  U_18334070  V_1395633  ...      125.0         NaN
+62249  U_18334070  V_1395633  ...        NaN         NaN
+5835   U_11321207  V_1395633  ...  7073421.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...        gap  session_id
+62246  U_18334070  V_1395633  ...      315.0         0.0
+62247  U_18334070  V_1395633  ...       55.0         0.0
+62248  U_18334070  V_1395633  ...      125.0         0.0
+62249  U_18334070  V_1395633  ...        NaN         0.0
+5835   U_11321207  V_1395633  ...  7073421.0         0.0
+
+[5 rows x 9 columns]
+user_id    video_consecutive_id  session_id
+U_1000290  1                     0.0           0
+           2                     0.0           0
+           3                     0.0           0
+           4                     0.0           0
+U_1004662  1                     0.0           0
+                                              ..
+U_998508   15                    0.0           1
+           16                    0.0           0
+           17                    0.0           0
+           18                    0.0           1
+           19                    0.0           0
+Name: seg_rep_count, Length: 66841, dtype: int64
+Loading partition part.20.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+32104  U_15455228  V_1395643  ...                     1    NaN
+32105  U_15455228  V_1395644  ...                     2    5.0
+32106  U_15455228  V_1395644  ...                     2    NaN
+32107  U_15455228  V_1395645  ...                     3  125.0
+32108  U_15455228  V_1395645  ...                     3   25.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+32104  U_15455228  V_1395643  ...    NaN         NaN
+32105  U_15455228  V_1395644  ...    5.0         NaN
+32106  U_15455228  V_1395644  ...    NaN         NaN
+32107  U_15455228  V_1395645  ...  125.0         NaN
+32108  U_15455228  V_1395645  ...   25.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+32104  U_15455228  V_1395643  ...    NaN         0.0
+32105  U_15455228  V_1395644  ...    5.0         0.0
+32106  U_15455228  V_1395644  ...    NaN         0.0
+32107  U_15455228  V_1395645  ...  125.0         0.0
+32108  U_15455228  V_1395645  ...   25.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_1002389   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+U_10026963  1                     0.0           0
+                                  1.0           0
+                                               ..
+U_9988528   4                     0.0           0
+            5                     0.0           0
+                                  1.0           0
+                                  2.0           0
+                                  3.0           3
+Name: seg_rep_count, Length: 66491, dtype: int64
+Loading partition part.27.parquet
+Exploding sequences to segments
+           user_id   video_id  ...  video_consecutive_id    gap
+133545  U_29907058  V_1395633  ...                     1   65.0
+133546  U_29907058  V_1395633  ...                     1  300.0
+133547  U_29907058  V_1395633  ...                     1    NaN
+133548  U_29907058  V_1395636  ...                     2    NaN
+133549  U_29907058  V_1395639  ...                     3    NaN
+
+[5 rows x 8 columns]
+inside session            user_id   video_id  ...    gap  session_id
+133545  U_29907058  V_1395633  ...   65.0         NaN
+133546  U_29907058  V_1395633  ...  300.0         NaN
+133547  U_29907058  V_1395633  ...    NaN         NaN
+133548  U_29907058  V_1395636  ...    NaN         NaN
+133549  U_29907058  V_1395639  ...    NaN         NaN
+
+[5 rows x 9 columns]
+           user_id   video_id  ...    gap  session_id
+133545  U_29907058  V_1395633  ...   65.0         0.0
+133546  U_29907058  V_1395633  ...  300.0         0.0
+133547  U_29907058  V_1395633  ...    NaN         0.0
+133548  U_29907058  V_1395636  ...    NaN         0.0
+133549  U_29907058  V_1395639  ...    NaN         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10026984  1                     0.0           0
+U_1008048   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+                                               ..
+U_9969645   31                    0.0           0
+            32                    0.0           0
+            33                    0.0           0
+            34                    0.0           0
+            35                    0.0           0
+Name: seg_rep_count, Length: 67417, dtype: int64
+Loading partition part.13.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+89410  U_25273956  V_1395633  ...                     1  250.0
+89411  U_25273956  V_1395633  ...                     1    NaN
+18099  U_14201422  V_1395693  ...                     1  185.0
+18100  U_14201422  V_1395693  ...                     1  100.0
+18101  U_14201422  V_1395693  ...                     1   80.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+89410  U_25273956  V_1395633  ...  250.0         NaN
+89411  U_25273956  V_1395633  ...    NaN         NaN
+18099  U_14201422  V_1395693  ...  185.0         NaN
+18100  U_14201422  V_1395693  ...  100.0         NaN
+18101  U_14201422  V_1395693  ...   80.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+89410  U_25273956  V_1395633  ...  250.0         0.0
+89411  U_25273956  V_1395633  ...    NaN         0.0
+18099  U_14201422  V_1395693  ...  185.0         0.0
+18100  U_14201422  V_1395693  ...  100.0         0.0
+18101  U_14201422  V_1395693  ...   80.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_1003402   1                     0.0           0
+U_10060652  1                     0.0           0
+U_1006254   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+                                               ..
+U_996523    2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+U_9979616   1                     0.0           0
+            2                     0.0           0
+Name: seg_rep_count, Length: 66251, dtype: int64
+Loading partition part.7.parquet
+Exploding sequences to segments
+           user_id   video_id  ...  video_consecutive_id    gap
+122653  U_29160310  V_1395635  ...                     1    NaN
+192693   U_4938417  V_1358564  ...                     1    NaN
+31248   U_15492738  V_1358540  ...                     1  175.0
+31249   U_15492738  V_1358540  ...                     1   65.0
+31250   U_15492738  V_1358540  ...                     1   74.0
+
+[5 rows x 8 columns]
+inside session            user_id   video_id  ...    gap  session_id
+122653  U_29160310  V_1395635  ...    NaN         NaN
+192693   U_4938417  V_1358564  ...    NaN         NaN
+31248   U_15492738  V_1358540  ...  175.0         NaN
+31249   U_15492738  V_1358540  ...   65.0         NaN
+31250   U_15492738  V_1358540  ...   74.0         NaN
+
+[5 rows x 9 columns]
+           user_id   video_id  ...    gap  session_id
+122653  U_29160310  V_1395635  ...    NaN         0.0
+192693   U_4938417  V_1358564  ...    NaN         0.0
+31248   U_15492738  V_1358540  ...  175.0         0.0
+31249   U_15492738  V_1358540  ...   65.0         0.0
+31250   U_15492738  V_1358540  ...   74.0         0.0
+
+[5 rows x 9 columns]
+user_id    video_consecutive_id  session_id
+U_100281   1                     0.0           0
+           2                     0.0           1
+           3                     0.0           0
+           4                     0.0           0
+           5                     0.0           0
+                                              ..
+U_9955478  1                     0.0           0
+           2                     0.0           0
+           3                     0.0           0
+           4                     0.0           0
+U_997234   1                     0.0           0
+Name: seg_rep_count, Length: 66504, dtype: int64
+Loading partition part.8.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+33172  U_15455482  V_1395633  ...                     1  180.0
+33173  U_15455482  V_1395633  ...                     1  370.0
+33174  U_15455482  V_1395633  ...                     1    NaN
+33175  U_15455482  V_1395634  ...                     2   55.0
+33176  U_15455482  V_1395634  ...                     2   65.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+33172  U_15455482  V_1395633  ...  180.0         NaN
+33173  U_15455482  V_1395633  ...  370.0         NaN
+33174  U_15455482  V_1395633  ...    NaN         NaN
+33175  U_15455482  V_1395634  ...   55.0         NaN
+33176  U_15455482  V_1395634  ...   65.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+33172  U_15455482  V_1395633  ...  180.0         0.0
+33173  U_15455482  V_1395633  ...  370.0         0.0
+33174  U_15455482  V_1395633  ...    NaN         0.0
+33175  U_15455482  V_1395634  ...   55.0         0.0
+33176  U_15455482  V_1395634  ...   65.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10017170  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+U_1002784   1                     0.0           0
+                                               ..
+U_9959178   2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+U_9962538   1                     0.0           0
+U_99722     1                     0.0           0
+Name: seg_rep_count, Length: 68340, dtype: int64
+Loading partition part.4.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+28439  U_15411113  V_1395648  ...                     1  225.0
+28440  U_15411113  V_1395648  ...                     1    NaN
+22736  U_15193456  V_1395633  ...                     1  321.0
+22737  U_15193456  V_1395633  ...                     1   40.0
+22738  U_15193456  V_1395633  ...                     1   85.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+28439  U_15411113  V_1395648  ...  225.0         NaN
+28440  U_15411113  V_1395648  ...    NaN         NaN
+22736  U_15193456  V_1395633  ...  321.0         NaN
+22737  U_15193456  V_1395633  ...   40.0         NaN
+22738  U_15193456  V_1395633  ...   85.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+28439  U_15411113  V_1395648  ...  225.0         0.0
+28440  U_15411113  V_1395648  ...    NaN         0.0
+22736  U_15193456  V_1395633  ...  321.0         0.0
+22737  U_15193456  V_1395633  ...   40.0         0.0
+22738  U_15193456  V_1395633  ...   85.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10057880  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+                                               ..
+U_9950330   1                     0.0           0
+            2                     0.0           0
+U_9964534   1                     0.0           0
+            2                     0.0           2
+U_997134    1                     0.0           0
+Name: seg_rep_count, Length: 68808, dtype: int64
+Loading partition part.1.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+29860  U_15337868  V_1395633  ...                     1   20.0
+29861  U_15337868  V_1395633  ...                     1  125.0
+29862  U_15337868  V_1395633  ...                     1   50.0
+29863  U_15337868  V_1395633  ...                     1   50.0
+29864  U_15337868  V_1395633  ...                     1   90.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+29860  U_15337868  V_1395633  ...   20.0         NaN
+29861  U_15337868  V_1395633  ...  125.0         NaN
+29862  U_15337868  V_1395633  ...   50.0         NaN
+29863  U_15337868  V_1395633  ...   50.0         NaN
+29864  U_15337868  V_1395633  ...   90.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+29860  U_15337868  V_1395633  ...   20.0         0.0
+29861  U_15337868  V_1395633  ...  125.0         0.0
+29862  U_15337868  V_1395633  ...   50.0         0.0
+29863  U_15337868  V_1395633  ...   50.0         0.0
+29864  U_15337868  V_1395633  ...   90.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_1000454   1                     0.0           0
+            2                     0.0           0
+U_10027748  1                     0.0           0
+            2                     0.0           0
+U_10028259  1                     0.0           0
+                                               ..
+U_98947     24                    0.0           0
+            25                    0.0           0
+            26                    0.0           0
+U_9945059   1                     0.0           0
+U_9966690   1                     0.0           0
+Name: seg_rep_count, Length: 67365, dtype: int64
+Loading partition part.0.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+28943  U_15399681  V_1395633  ...                     1   65.0
+28944  U_15399681  V_1395633  ...                     1   45.0
+28945  U_15399681  V_1395633  ...                     1   65.0
+28946  U_15399681  V_1395633  ...                     1  140.0
+28947  U_15399681  V_1395633  ...                     1    NaN
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+28943  U_15399681  V_1395633  ...   65.0         NaN
+28944  U_15399681  V_1395633  ...   45.0         NaN
+28945  U_15399681  V_1395633  ...   65.0         NaN
+28946  U_15399681  V_1395633  ...  140.0         NaN
+28947  U_15399681  V_1395633  ...    NaN         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+28943  U_15399681  V_1395633  ...   65.0         0.0
+28944  U_15399681  V_1395633  ...   45.0         0.0
+28945  U_15399681  V_1395633  ...   65.0         0.0
+28946  U_15399681  V_1395633  ...  140.0         0.0
+28947  U_15399681  V_1395633  ...    NaN         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_1002476   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+U_10027765  1                     0.0           1
+            2                     0.0           1
+                                               ..
+U_9979639   2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+            6                     0.0           0
+Name: seg_rep_count, Length: 68243, dtype: int64
+Loading partition part.11.parquet
+Exploding sequences to segments
+         user_id   video_id  ...  video_consecutive_id    gap
+6983  U_11644439  V_1358540  ...                     1   30.0
+6984  U_11644439  V_1358540  ...                     1  157.7
+6985  U_11644439  V_1358540  ...                     1   43.0
+6986  U_11644439  V_1358540  ...                     1    NaN
+6987  U_11644439  V_1358542  ...                     2   30.0
+
+[5 rows x 8 columns]
+inside session          user_id   video_id  end_point  ...  video_consecutive_id    gap  session_id
+6983  U_11644439  V_1358540      184.7  ...                     1   30.0         NaN
+6984  U_11644439  V_1358540      403.0  ...                     1  157.7         NaN
+6985  U_11644439  V_1358540      422.3  ...                     1   43.0         NaN
+6986  U_11644439  V_1358540      599.0  ...                     1    NaN         NaN
+6987  U_11644439  V_1358542      254.9  ...                     2   30.0         NaN
+
+[5 rows x 9 columns]
+         user_id   video_id  end_point  ...  video_consecutive_id    gap  session_id
+6983  U_11644439  V_1358540      184.7  ...                     1   30.0         0.0
+6984  U_11644439  V_1358540      403.0  ...                     1  157.7         0.0
+6985  U_11644439  V_1358540      422.3  ...                     1   43.0         0.0
+6986  U_11644439  V_1358540      599.0  ...                     1    NaN         0.0
+6987  U_11644439  V_1358542      254.9  ...                     2   30.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_1005616   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           1
+U_10057608  1                     0.0           0
+U_10065603  1                     0.0           0
+                                               ..
+U_9963734   2                     1.0           0
+U_9968262   1                     0.0           0
+U_99723     1                     0.0           0
+            2                     0.0           0
+U_9989082   1                     0.0           0
+Name: seg_rep_count, Length: 66028, dtype: int64
+Loading partition part.3.parquet
+Exploding sequences to segments
+           user_id   video_id  ...  video_consecutive_id    gap
+107422  U_26416450  V_1395648  ...                     1    NaN
+107423  U_26416450  V_1395650  ...                     2    NaN
+107424  U_26416450  V_1395651  ...                     3    NaN
+32164   U_15488477  V_1395633  ...                     1  255.0
+32165   U_15488477  V_1395633  ...                     1   55.0
+
+[5 rows x 8 columns]
+inside session            user_id   video_id  ...    gap  session_id
+107422  U_26416450  V_1395648  ...    NaN         NaN
+107423  U_26416450  V_1395650  ...    NaN         NaN
+107424  U_26416450  V_1395651  ...    NaN         NaN
+32164   U_15488477  V_1395633  ...  255.0         NaN
+32165   U_15488477  V_1395633  ...   55.0         NaN
+
+[5 rows x 9 columns]
+           user_id   video_id  ...    gap  session_id
+107422  U_26416450  V_1395648  ...    NaN         0.0
+107423  U_26416450  V_1395650  ...    NaN         0.0
+107424  U_26416450  V_1395651  ...    NaN         0.0
+32164   U_15488477  V_1395633  ...  255.0         0.0
+32165   U_15488477  V_1395633  ...   55.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10026249  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+U_100294    1                     0.0           0
+                                               ..
+U_9950390   4                     0.0           0
+U_996997    1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+Name: seg_rep_count, Length: 67221, dtype: int64
+Loading partition part.10.parquet
+Exploding sequences to segments
+           user_id   video_id  ...  video_consecutive_id     gap
+10125   U_12368337  V_1385224  ...                     1   662.7
+10126   U_12368337  V_1385224  ...                     1  1474.0
+10127   U_12368337  V_1385224  ...                     1     NaN
+103818  U_26346017  V_1395634  ...                     1     NaN
+103815  U_26346017  V_1395633  ...                     2     NaN
+
+[5 rows x 8 columns]
+inside session            user_id   video_id  ...     gap  session_id
+10125   U_12368337  V_1385224  ...   662.7         NaN
+10126   U_12368337  V_1385224  ...  1474.0         NaN
+10127   U_12368337  V_1385224  ...     NaN         NaN
+103818  U_26346017  V_1395634  ...     NaN         NaN
+103815  U_26346017  V_1395633  ...     NaN         NaN
+
+[5 rows x 9 columns]
+           user_id   video_id  ...     gap  session_id
+10125   U_12368337  V_1385224  ...   662.7         0.0
+10126   U_12368337  V_1385224  ...  1474.0         0.0
+10127   U_12368337  V_1385224  ...     NaN         0.0
+103818  U_26346017  V_1395634  ...     NaN         0.0
+103815  U_26346017  V_1395633  ...     NaN         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10013620  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+U_10018040  1                     0.0           0
+                                               ..
+U_9996819   2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+                                  1.0           0
+            5                     0.0           0
+Name: seg_rep_count, Length: 67385, dtype: int64
+Loading partition part.21.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+29165  U_15456941  V_1395682  ...                     1   90.0
+29166  U_15456941  V_1395682  ...                     1   10.0
+29167  U_15456941  V_1395682  ...                     1   30.0
+29168  U_15456941  V_1395682  ...                     1   35.0
+29169  U_15456941  V_1395682  ...                     1  110.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+29165  U_15456941  V_1395682  ...   90.0         NaN
+29166  U_15456941  V_1395682  ...   10.0         NaN
+29167  U_15456941  V_1395682  ...   30.0         NaN
+29168  U_15456941  V_1395682  ...   35.0         NaN
+29169  U_15456941  V_1395682  ...  110.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+29165  U_15456941  V_1395682  ...   90.0         0.0
+29166  U_15456941  V_1395682  ...   10.0         0.0
+29167  U_15456941  V_1395682  ...   30.0         0.0
+29168  U_15456941  V_1395682  ...   35.0         0.0
+29169  U_15456941  V_1395682  ...  110.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10013633  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+U_10074582  1                     0.0           0
+            2                     0.0           0
+                                               ..
+U_9945986   8                     0.0           1
+            9                     0.0           0
+            10                    0.0           0
+            11                    0.0           0
+            12                    0.0           1
+Name: seg_rep_count, Length: 68317, dtype: int64
+Loading partition part.5.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+17811  U_12916927  V_1395666  ...                     1   95.0
+17812  U_12916927  V_1395666  ...                     1  110.0
+17813  U_12916927  V_1395666  ...                     1    NaN
+17814  U_12916927  V_1395667  ...                     2  105.0
+17815  U_12916927  V_1395667  ...                     2   40.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+17811  U_12916927  V_1395666  ...   95.0         NaN
+17812  U_12916927  V_1395666  ...  110.0         NaN
+17813  U_12916927  V_1395666  ...    NaN         NaN
+17814  U_12916927  V_1395667  ...  105.0         NaN
+17815  U_12916927  V_1395667  ...   40.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+17811  U_12916927  V_1395666  ...   95.0         0.0
+17812  U_12916927  V_1395666  ...  110.0         0.0
+17813  U_12916927  V_1395666  ...    NaN         0.0
+17814  U_12916927  V_1395667  ...  105.0         0.0
+17815  U_12916927  V_1395667  ...   40.0         0.0
+
+[5 rows x 9 columns]
+user_id    video_consecutive_id  session_id
+U_100066   1                     0.0           0
+U_1002737  1                     0.0           0
+           2                     0.0           0
+           3                     0.0           0
+           4                     0.0           0
+                                              ..
+U_996799   7                     0.0           0
+           8                     0.0           0
+           9                     0.0           0
+           10                    0.0           0
+           11                    0.0           0
+Name: seg_rep_count, Length: 68211, dtype: int64
+Loading partition part.22.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+26280  U_15205235  V_1395633  ...                     1    NaN
+26281  U_15205235  V_1395634  ...                     2    NaN
+26282  U_15205235  V_1395635  ...                     3  480.0
+26283  U_15205235  V_1395635  ...                     3    NaN
+26284  U_15205235  V_1395637  ...                     4   89.5
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+26280  U_15205235  V_1395633  ...    NaN         NaN
+26281  U_15205235  V_1395634  ...    NaN         NaN
+26282  U_15205235  V_1395635  ...  480.0         NaN
+26283  U_15205235  V_1395635  ...    NaN         NaN
+26284  U_15205235  V_1395637  ...   89.5         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+26280  U_15205235  V_1395633  ...    NaN         0.0
+26281  U_15205235  V_1395634  ...    NaN         0.0
+26282  U_15205235  V_1395635  ...  480.0         0.0
+26283  U_15205235  V_1395635  ...    NaN         0.0
+26284  U_15205235  V_1395637  ...   89.5         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10012383  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+                                               ..
+U_996755    5                     0.0           0
+            6                     0.0           0
+            7                     0.0           0
+U_9981513   1                     0.0           0
+            2                     0.0           0
+Name: seg_rep_count, Length: 69091, dtype: int64
+Loading partition part.16.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+27794  U_15488719  V_1395633  ...                     1   10.0
+27795  U_15488719  V_1395633  ...                     1  110.0
+27796  U_15488719  V_1395633  ...                     1  165.0
+27797  U_15488719  V_1395633  ...                     1   15.0
+27798  U_15488719  V_1395633  ...                     1   25.0
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+27794  U_15488719  V_1395633  ...   10.0         NaN
+27795  U_15488719  V_1395633  ...  110.0         NaN
+27796  U_15488719  V_1395633  ...  165.0         NaN
+27797  U_15488719  V_1395633  ...   15.0         NaN
+27798  U_15488719  V_1395633  ...   25.0         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+27794  U_15488719  V_1395633  ...   10.0         0.0
+27795  U_15488719  V_1395633  ...  110.0         0.0
+27796  U_15488719  V_1395633  ...  165.0         0.0
+27797  U_15488719  V_1395633  ...   15.0         0.0
+27798  U_15488719  V_1395633  ...   25.0         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10007     1                     0.0           0
+            2                     0.0           0
+U_10012257  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+                                               ..
+U_9956359   23                    0.0           0
+U_997524    1                     0.0           0
+U_9981168   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+Name: seg_rep_count, Length: 68672, dtype: int64
+Loading partition part.6.parquet
+Exploding sequences to segments
+          user_id   video_id  ...  video_consecutive_id    gap
+36206  U_15456903  V_1395633  ...                     1  274.9
+36207  U_15456903  V_1395633  ...                     1    NaN
+36208  U_15456903  V_1395634  ...                     2    NaN
+36217  U_15488229  V_1395634  ...                     1  255.0
+36218  U_15488229  V_1395634  ...                     1    NaN
+
+[5 rows x 8 columns]
+inside session           user_id   video_id  ...    gap  session_id
+36206  U_15456903  V_1395633  ...  274.9         NaN
+36207  U_15456903  V_1395633  ...    NaN         NaN
+36208  U_15456903  V_1395634  ...    NaN         NaN
+36217  U_15488229  V_1395634  ...  255.0         NaN
+36218  U_15488229  V_1395634  ...    NaN         NaN
+
+[5 rows x 9 columns]
+          user_id   video_id  ...    gap  session_id
+36206  U_15456903  V_1395633  ...  274.9         0.0
+36207  U_15456903  V_1395633  ...    NaN         0.0
+36208  U_15456903  V_1395634  ...    NaN         0.0
+36217  U_15488229  V_1395634  ...  255.0         0.0
+36218  U_15488229  V_1395634  ...    NaN         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10012251  1                     0.0           0
+            2                     0.0           0
+U_10027762  1                     0.0           0
+U_10074577  1                     0.0           0
+U_10091096  1                     0.0           0
+                                               ..
+U_997506    25                    0.0           0
+            26                    0.0           0
+            27                    0.0           0
+            28                    0.0           0
+            29                    0.0           2
+Name: seg_rep_count, Length: 67929, dtype: int64
+Loading partition part.19.parquet
+Exploding sequences to segments
+         user_id   video_id  ...  video_consecutive_id    gap
+67089  U_1912850  V_1395633  ...                     1    NaN
+67090  U_1912850  V_1395634  ...                     2  155.0
+67091  U_1912850  V_1395634  ...                     2   35.0
+67092  U_1912850  V_1395634  ...                     2    NaN
+67093  U_1912850  V_1395641  ...                     3    NaN
+
+[5 rows x 8 columns]
+inside session          user_id   video_id  end_point  ...  video_consecutive_id    gap  session_id
+67089  U_1912850  V_1395633      446.5  ...                     1    NaN         NaN
+67090  U_1912850  V_1395634      134.7  ...                     2  155.0         NaN
+67091  U_1912850  V_1395634      319.7  ...                     2   35.0         NaN
+67092  U_1912850  V_1395634      370.5  ...                     2    NaN         NaN
+67093  U_1912850  V_1395641      762.7  ...                     3    NaN         NaN
+
+[5 rows x 9 columns]
+         user_id   video_id  end_point  ...  video_consecutive_id    gap  session_id
+67089  U_1912850  V_1395633      446.5  ...                     1    NaN         0.0
+67090  U_1912850  V_1395634      134.7  ...                     2  155.0         0.0
+67091  U_1912850  V_1395634      319.7  ...                     2   35.0         0.0
+67092  U_1912850  V_1395634      370.5  ...                     2    NaN         0.0
+67093  U_1912850  V_1395641      762.7  ...                     3    NaN         0.0
+
+[5 rows x 9 columns]
+user_id     video_consecutive_id  session_id
+U_10091150  1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+            4                     0.0           0
+            5                     0.0           0
+                                               ..
+U_9951377   11                    0.0           0
+            12                    0.0           0
+U_9965811   1                     0.0           0
+            2                     0.0           0
+            3                     0.0           0
+Name: seg_rep_count, Length: 68072, dtype: int64

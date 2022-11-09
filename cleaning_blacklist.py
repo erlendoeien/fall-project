@@ -9,6 +9,7 @@ def load_parquet_as_dd(file_name, **kwargs):
     return dd.read_parquet(file_name).repartition(npartitions=10)
 
 def merge_video_ccid(user2video, video_id2ccid):
+    """Will exclude some video_ids, as not every video_id has a mapping to a CCID"""
     logging.info(f"Merging {user2video} with {video_id2ccid}")
     sequences = user2video.explode("seq").reset_index()
     return sequences.assign(video_id=sequences["seq"].str["video_id"]).merge(video_id2ccid)

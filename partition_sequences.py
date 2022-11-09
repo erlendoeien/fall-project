@@ -33,10 +33,15 @@ if __name__ == "__main__":
     relations_path = base_path / "relations"
     
     logging.info("Loading dataset")
-    cleaned_user2video = dd.from_pandas(pd.read_parquet(relations_path / "clean-user-video-sequences_thresh_20.parquet"), npartitions=N_PARTS)
-    logging.info(f"Storing {N_PARTS=}")
+    cleaned_user2video = dd.read_parquet(relations_path / "clean-user-video-sequences_thresh_20.parquet", npartitions=10)
     
+    logging.info("Sorting and shuffling user_id for partitions")
+    user_shuffled_ddf = cleaned_user2video.sort_values("user_id").shuffle(on="user_id", npartitions=N_PARTS, ignore_index=True)
+    logging.info("Divisions")
+    logging.info(user_shuffled_ddf.divisions)
+    
+    logging.info(f"Storing {N_PARTS=}")
     # Custom py arrow schemae for the sequences
-    cleaned_user2video.to_parquet(relations_path / "clean_user2sequences_thresh_20_partitions_30", schema={"seq": SEQ_STRUCT})
-    logging.info("COMPLETE")
+    user_shuffled_ddf.to_parquet(relations_path / "clean_user2sequences_thresh_20_partitions_30", schema={"seq": SEQ_STRUCT})
+    logging.info("## COMPLETE ##")
 
