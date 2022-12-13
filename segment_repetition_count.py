@@ -211,9 +211,6 @@ if __name__ == "__main__":
     print(segments_w_repetition_count)#.head())
    
     
-    
-    
-    
     # DATA DESCRIPTION and print
     ## Describe, value counts etc
     seg_rep_count_dist = segments_w_repetition_count.value_counts(SEG_REP_COL).reset_index().rename(columns={0:"frequency"})

@@ -1,0 +1,9 @@
+[submodule "bert4rec-repro"]
+	path = bert4rec-repro
+	url = ./bert4rec-repro
+[submodule "aprec"]
+	path = aprec
+	url = ./aprec
+[submodule "b4rvae"]
+	path = b4rvae
+	url = ./b4rvae

@@ -1,16 +1,16 @@
 #!/bin/sh
-#SBATCH --partition=CPUQ
+#SBATCH --partition=GPUQ
 #SBATCH --account=ie-idi
-#SBATCH --time=02:00:00
+#SBATCH --time=32:00:00
+#SBATCH --gres=gpu:1
 #SBATCH --nodes=1              # 2 compute nodes
 #SBATCH --ntasks-per-node=1    # 1 mpi process each node
-#SBATCH --mem=64000            # 12GB - in megabytes
-#SBATCH --job-name="clean_blacklist_users"
-#SBATCH --cpus-per-task=10 # Number of physical cores
+#SBATCH --mem=32000            # 12GB - in megabytes
+#SBATCH --job-name="mo-i-ex-la"
+#SBATCH --cpus-per-task=1 # Number of physical cores
 #SBATCH --ntasks-per-core=2 # Hyperthreading -> 2 threads for each physical core
-#SBATCH --output=clean_blacklist_users.out
-#SBATCH --mail-user=erlenoi@stud.ntnu.no
-#SBATCH --mail-type=ALL
+#SBATCH --output=mooc-inv-exp-lam.out
+
 
 WORKDIR=${SLURM_SUBMIT_DIR}
 cd ${WORKDIR}
@@ -25,4 +25,7 @@ echo "Total of $SLURM_NTASKS cores"
 
 module purge
 ml TensorFlow/2.6.0-foss-2021a-CUDA-11.3.1
-python cleaning_blacklist.py
+cd aprec/evaluation
+CUDA_VISIBLE_DEVICES=0 sh run_n_experiments.sh configs/MOOC_rss_inverse_exp_lambda.py
+
+

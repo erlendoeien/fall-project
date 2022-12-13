@@ -69,9 +69,9 @@ if __name__ == "__main__":
     clean_user2video_ccid = filter_users(user2video_ccid, blacklist)
 
     # Save files
-    logging.info("Saving blacklist")
+    #logging.info("Saving blacklist")
     blacklist.to_csv("results/blacklist")
-    logging.info("Saving cleaned user2-video-exploded")
+    #logging.info("Saving cleaned user2-video-exploded")
     save_dd_df(clean_user2video_ccid, relations_path / "clean-user-video-sequences.parquet")
 
     num_segments = count_segments(user2video_ccid)
@@ -79,6 +79,6 @@ if __name__ == "__main__":
 
     logging.info(f"Total number of segments before cleaning: {num_segments}")
     logging.info(f"Total number of segments after cleaning: {clean_num_segments}")
-    logging.info(f"\n-----> Dataset reduction {(1-(num_segments/clean_num_segments)*100):.2f}")
+    logging.info(f"\n-----> Dataset reduction {(1-(clean_num_segments/num_segments)*100):.2f}")
     logging.info(f"Number of blacklisted users: {blacklist.shape[0].compute()}")
     logging.info(f"Number of total unique users: {user2video_dd['user_id'].unique().shape[0].compute()}")
